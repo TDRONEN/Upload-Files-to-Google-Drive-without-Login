@@ -1,7 +1,6 @@
 /*
-
     RECEIVE FILES IN GOOGLE DRIVE
-    
+    https://www.labnol.org/internet/receive-files-in-google-drive/19697/
 */
 
 function doGet(e) {
