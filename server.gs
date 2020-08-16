@@ -1,18 +1,11 @@
 /*
 
     RECEIVE FILES IN GOOGLE DRIVE
-    - - - - - - - - - - - - - - - 
     
-    Tutorial: www.labnol.org/awesome
-
-    Twitter: @labnol
-    
-    Email: amit@labnol.org
-      
 */
 
 function doGet(e) {
-  return HtmlService.createHtmlOutputFromFile('forms.html').setTitle("Google File Upload by CTRLQ.org");
+  return HtmlService.createHtmlOutputFromFile('forms.html').setTitle("Google File Upload");
 }
 
 
@@ -29,7 +22,6 @@ function uploadFileToGoogleDrive(data, filess, name, email) {
       folder = DriveApp.createFolder(dropbox);
     }
     var userFolder = folder.createFolder([name, email].join(" "));
-    /* Credit: www.labnol.org/awesome */
     for(var x = 0; x < filess.length; x++){
 
     var contentType = data[x].substring(5,data[x].indexOf(';')),
